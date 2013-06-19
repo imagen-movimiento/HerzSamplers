@@ -8,4 +8,4 @@ HerzSamplers
 	- permite asignarle un sample, que se reproduce a dicha frecuencia
 
 
-Módulo desarrollado como apoyo al proyecto "Sincronías" de Lorena Mal. Programa de Apoyo a la Producción e Investigación del Centro Multimedia. Tim 2013.
+Módulo desarrollado como apoyo al proyecto "Sincronía" de Lorena Mal. Programa de Apoyo a la Producción e Investigación del Centro Multimedia. Tim 2013.

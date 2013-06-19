@@ -7,7 +7,7 @@ http://importgeek.wordpress.com/2013/05/10/play-more-than-one-audio-sample-in-pr
 
 // variables globales:
 
-float hz [] = { 0.7, 1.2, 0.25, 0.4 };
+float hz [] = { 0.7, 1.2, 0.25, 0.4, 0.7, 1.2, 0.25, 0.4, 0.7, 1.2, 0.25, 0.4 };
 
 String filenames [] = { "heart1.wav", "heart2.wav" };
 
