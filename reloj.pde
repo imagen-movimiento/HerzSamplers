@@ -5,19 +5,14 @@ class Reloj {
   
   
   void draw(){
-    strokeWeight( 4 );
+    
     
     float grados_posicion = float(position * 360 ) / ( num_segundos * 1000 );
-    float rads_posicion = grados_posicion * PI/180;
-  
-    
+    float rads_posicion = grados_posicion * PI/180;     
     
     int num_eventos = players.size();
-    float grados_paso =  360 / num_eventos;
-    
-
-
-
+    float grados_paso =  360 / (float) num_eventos;
+           
     for( int i = 0; i < num_eventos; i++ ) {
                   
       float rads_paso = grados_paso * i * PI/180;
@@ -38,9 +33,7 @@ class Reloj {
       }
       else
         noFill(); 
-       
-       
-      
+
       ellipse( x + cos(rads_paso) * s / 2, y + sin(rads_paso) * s / 2, s / 5, s / 5 );    
     }
     
@@ -104,7 +97,7 @@ class Reloj {
       
       if ( sampler != null ) {
         sampler.trigger();
-        println( "play: " + filename );
+        //println( "play: " + filename );
       }
       else {
         println( "player not set" );      
@@ -124,9 +117,7 @@ class Reloj {
   void setSampler( String _filename ) {
     filename = _filename;
     if( minim != null )
-      sampler = minim.loadSample( filename );      
-    
-    
+      sampler = minim.loadSample( filename );   
   }
 
 
