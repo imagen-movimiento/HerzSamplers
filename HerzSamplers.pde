@@ -37,6 +37,7 @@ Minim m;
 
 
 void setup() {
+  
   size(600, 600);
 
   m = new Minim(this);
@@ -45,14 +46,16 @@ void setup() {
   //p.trigger();
   
   grid = new Grid( 3, 3, width/3, width/3, width/6, width/6 );
+  
   relojes = new ArrayList<Reloj>();
+  
   int num_relojes = hz.length;
 
 
   for ( int i = 0; i < num_relojes; i++) {
     Reloj r = new Reloj();
 
-    r.setXYS( (int)grid.getX(i), (int) grid.getY(i), 100);
+    r.setXYS( grid.getX(i), grid.getY(i), 100);
     r.setHz( hz[i] );
 
     

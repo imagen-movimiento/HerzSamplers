@@ -77,7 +77,10 @@ class Reloj {
     x = _x; y = _y; s = _s;
   }
   
-  
+  void setXYS( float _x, float _y, int _s ) {
+    x = (int)_x; y = (int)_y; s = _s;
+  }
+    
   
   void setHz( float _hz ) {
     hz = _hz;
